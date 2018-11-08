@@ -1,12 +1,23 @@
 <title>Mike's Homepage</title>
 
 <body bgcolor="#C0C0C0">
-  <div>
+  <div> <!-- Header -->
     <h1 align="center">Welcome to My Homepage!</h1>
     <h4 align="center">This is where I do my HTML/Online expirimenting.</h4>
+  </div>
+  <div> <!-- Body -->
+    <br><br>
+    <p id="date"></p>
+    <script>
+      n =  new Date();
+      y = n.getFullYear();
+      m = n.getMonth() + 1;
+      d = n.getDate();
+      document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+    </script>
     <br><br>
   </div>
-  <div>
+  <div> <!-- Table of Contents Box -->
     <h2 align="center">Table of Contents</h2>
     <table align="center" style="border: 1px solid black;">
       <tr>
