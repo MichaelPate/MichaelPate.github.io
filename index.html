@@ -7,13 +7,16 @@
   </div>
   <div> <!-- Body -->
     <br><br>
-    <p id="date"></p>
+    <p id="date" align="center"></p>
     <script>
       n =  new Date();
       y = n.getFullYear();
       m = n.getMonth() + 1;
       d = n.getDate();
-      document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+      hours = n.getHours();
+      minutes = n.getMinutes();
+      document.getElementById("date").innerHTML =
+        "The date is " + m + "/" + d + "/" + y + " and the time is " + hours + ":" + minutes;
     </script>
     <br><br>
   </div>
